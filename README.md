@@ -7,7 +7,7 @@ Spring boot project with integration of AWS S3
   * Spring Cloud AWS Core 2.2.6.RELEASE
   
 * ### Configuration
-  * https://medium.com
+  * https://sachithariyathilaka.medium.com/aws-s3-spring-boot-integration-a575b76400b1
   
 * ### Release Note
 

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent information -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.3</version>
+		<relativePath/>
+	</parent>
+
+	<!-- Core information -->
+	<groupId>com.bytegen</groupId>
+	<artifactId>s3-tutorial</artifactId>
+	<version>1.0.0</version>
+
+	<!-- Packaging information -->
+	<packaging>jar</packaging>
+
+	<!-- Project information -->
+	<name>s3-tutorial</name>
+	<description>Spring boot project for integrate AWS S3</description>
+	<url>https://github.com/sachithariyathilaka/s3-tutorial</url>
+	<inceptionYear>2024</inceptionYear>
+
+	<!-- Properties information -->
+	<properties>
+
+		<!-- Project properties -->
+		<java.version>17</java.version>
+
+		<!-- Dependency properties -->
+		<aws.core.version>2.2.6.RELEASE</aws.core.version>
+
+	</properties>
+
+	<!-- Licenses information -->
+	<licenses>
+		<license>
+			<name>Apache Licence</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+
+	<!-- Developers information -->
+	<developers>
+		<developer>
+			<id>1</id>
+			<name>Sachith Ariyathilaka</name>
+			<organization>ByteGen Technologies</organization>
+			<organizationUrl>https://github.com/sachithariyathilaka</organizationUrl>
+			<email>sachith.vidu@yahoo.com</email>
+			<roles>
+				<role>Chairman</role>
+			</roles>
+			<timezone>UTC +5:30</timezone>
+		</developer>
+	</developers>
+
+	<!-- Repository information -->
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<!-- Plugin repository information -->
+	<pluginRepositories>
+
+		<pluginRepository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+
+	</pluginRepositories>
+
+	<!-- Profile information -->
+	<profiles>
+		<profile>
+			<id>Tutorial</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+
+	<!-- Dependency information -->
+	<dependencies>
+
+		<!-- spring starter dependencies -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Lombok dependency -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- AWS dependency -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-aws-core</artifactId>
+			<version>${aws.core.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<!-- Build information -->
+	<build>
+
+		<!-- General information -->
+		<directory>${project.basedir}/target</directory>
+		<outputDirectory>${project.build.directory}/classes</outputDirectory>
+		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+
+		<!-- Plugin information -->
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- Reporting information -->
+	<reporting>
+		<outputDirectory>${project.build.directory}/site</outputDirectory>
+	</reporting>
+
+</project>

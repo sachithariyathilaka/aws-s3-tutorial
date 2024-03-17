@@ -13,8 +13,7 @@ Spring boot project with integration of AWS S3
 
   * Version: 1.0.0
   * Date: 2024/03/17
-  * Modules <br/><br/>
-    * File Storage Module
-      * File upload endpoint to AWS S3.
-      * File download endpoint from AWS S3.
-      * File delete endpoint on AWS S3.
+  * File Storage Module
+    * File upload endpoint to AWS S3.
+    * File download endpoint from AWS S3.
+    * File delete endpoint on AWS S3.

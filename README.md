@@ -11,7 +11,6 @@ Spring boot project with integration of AWS S3
   
 * ### Release Note
 
-  * Release ID: 1
   * Version: 1.0.0
   * Date: 2024/03/17
   * Changes: Implements the following functionalities.

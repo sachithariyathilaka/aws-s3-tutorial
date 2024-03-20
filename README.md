@@ -1,10 +1,12 @@
 # AWS S3 Tutorial
-Spring boot project with integration of AWS S3
+Spring boot project with integration of AWS S3.
 
 * ### Technologies
   * Java 17
   * Spring Boot 3.2.3
   * Spring Cloud AWS Core 2.2.6.RELEASE
+  * Maven
+  * Lombok
   
 * ### Configuration
   * https://sachithariyathilaka.medium.com/aws-s3-spring-boot-integration-a575b76400b1

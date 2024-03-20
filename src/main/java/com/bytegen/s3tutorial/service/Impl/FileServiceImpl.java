@@ -15,12 +15,12 @@ import java.io.IOException;
 import java.util.Objects;
 
 /**
- * @class FileServiceImpl
- * @description This class is the service layer of the file storage
+ * @class       FileServiceImpl
+ * @description Service layer of the file storage
  *
- * @author Sachith Ariyathilaka
- * @version 1.0.0
- * @date 2024/03/17
+ * @author      Sachith Ariyathilaka
+ * @version     1.0.0
+ * @date        2024/03/17
  */
 @Service
 public class FileServiceImpl implements FileService {
@@ -31,21 +31,21 @@ public class FileServiceImpl implements FileService {
 
     /**
      * @constructor FileServiceImpl
-     * @description This is the argument constructor for class FileServiceImpl
+     * @description Argument constructor for class FileServiceImpl
      *
-     * @param amazonS3 the amazon s3
+     * @param       amazonS3 the amazon s3
      */
     public FileServiceImpl(AmazonS3 amazonS3) {
         this.amazonS3 = amazonS3;
     }
 
     /**
-     * @method uploadFile
-     * @description This method used to handle upload file functionality
+     * @method      uploadFile
+     * @description Provides the upload file functionality
      *
-     * @param multipartFile the multipart file
+     * @param       multipartFile the multipart file
      *
-     * @return the file name
+     * @return      the file name
      */
     @Override
     public String uploadFile(MultipartFile multipartFile) {
@@ -59,12 +59,12 @@ public class FileServiceImpl implements FileService {
     }
 
     /**
-     * @method downloadFile
-     * @description This method used to handle download file functionality
+     * @method      downloadFile
+     * @description Provides the download file functionality
      *
-     * @param fileName the file name
+     * @param       fileName the file name
      *
-     * @return the file
+     * @return      the file
      */
     @Override
     public byte[] downloadFile(String fileName) {
@@ -79,12 +79,12 @@ public class FileServiceImpl implements FileService {
     }
 
     /**
-     * @method uploadFile
-     * @description This method used to handle upload file functionality
+     * @method      uploadFile
+     * @description Provides the upload file functionality
      *
-     * @param fileName the file name
+     * @param       fileName the file name
      *
-     * @return the file name
+     * @return      the file name
      */
     @Override
     public String deleteFile(String fileName) {
@@ -93,12 +93,12 @@ public class FileServiceImpl implements FileService {
     }
 
     /**
-     * @method convert
-     * @description This method used to convert MultipartFile into File
+     * @method      convert
+     * @description Convert MultipartFile into File
      *
-     * @param multipartFile the multipart file
+     * @param       multipartFile the multipart file
      *
-     * @return the file
+     * @return      the file
      */
     private File convert(MultipartFile multipartFile) {
         File file = new File(Objects.requireNonNull(multipartFile.getOriginalFilename()));

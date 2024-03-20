@@ -6,12 +6,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @class APIResponse
- * @description This class is used as response resource of file controller
+ * @class       APIResponse
+ * @description Response resource of file controller
  *
- * @author Sachith Ariyathilaka
- * @version 1.0.0
- * @date 2024/03/17
+ * @author      Sachith Ariyathilaka
+ * @version     1.0.0
+ * @date        2024/03/17
  */
 @AllArgsConstructor
 @NoArgsConstructor

@@ -25,17 +25,6 @@
 	<url>https://github.com/sachithariyathilaka/s3-tutorial</url>
 	<inceptionYear>2024</inceptionYear>
 
-	<!-- Properties information -->
-	<properties>
-
-		<!-- Project properties -->
-		<java.version>17</java.version>
-
-		<!-- Dependency properties -->
-		<aws.core.version>2.2.6.RELEASE</aws.core.version>
-
-	</properties>
-
 	<!-- Licenses information -->
 	<licenses>
 		<license>
@@ -58,46 +47,16 @@
 		</developer>
 	</developers>
 
-	<!-- Repository information -->
-	<repositories>
-		<repository>
-			<id>central</id>
-			<name>Central Repository</name>
-			<url>https://repo.maven.apache.org/maven2</url>
-			<layout>default</layout>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+	<!-- Properties information -->
+	<properties>
 
-	<!-- Plugin repository information -->
-	<pluginRepositories>
+		<!-- Project properties -->
+		<java.version>17</java.version>
 
-		<pluginRepository>
-			<id>central</id>
-			<name>Central Repository</name>
-			<url>https://repo.maven.apache.org/maven2</url>
-			<layout>default</layout>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-		</pluginRepository>
+		<!-- Dependency properties -->
+		<aws.core.version>2.2.6.RELEASE</aws.core.version>
 
-	</pluginRepositories>
-
-	<!-- Profile information -->
-	<profiles>
-		<profile>
-			<id>tutorial</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-		</profile>
-	</profiles>
+	</properties>
 
 	<!-- Dependency information -->
 	<dependencies>
@@ -129,6 +88,47 @@
 		</dependency>
 
 	</dependencies>
+
+	<!-- Profile information -->
+	<profiles>
+		<profile>
+			<id>tutorial</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+
+	<!-- Repository information -->
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<!-- Plugin repository information -->
+	<pluginRepositories>
+
+		<pluginRepository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+
+	</pluginRepositories>
 
 	<!-- Build information -->
 	<build>

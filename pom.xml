@@ -25,14 +25,14 @@
 	<url>https://github.com/sachithariyathilaka/s3-tutorial</url>
 	<inceptionYear>2024</inceptionYear>
 
-	<!-- Licenses information -->
+	<!-- License information -->
 	<licenses>
 		<license>
 			<name>MIT Licence</name>
 		</license>
 	</licenses>
 
-	<!-- Developers information -->
+	<!-- Developer information -->
 	<developers>
 		<developer>
 			<id>1</id>
@@ -47,7 +47,7 @@
 		</developer>
 	</developers>
 
-	<!-- Properties information -->
+	<!-- Property information -->
 	<properties>
 
 		<!-- Project properties -->

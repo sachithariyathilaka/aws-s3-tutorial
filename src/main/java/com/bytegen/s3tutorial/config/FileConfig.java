@@ -10,12 +10,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @class       FileConfig
- * @description Set up basic configurations for Amazon S3 service
+ * Set up basic configurations for Amazon S3 service.
  *
- * @author      Sachith Ariyathilaka
- * @version     1.0.0
- * @date        2024/03/17
+ * @author  Sachith Ariyathilaka
+ * @version 1.0.0
+ * @since   2024/03/17
  */
 @Configuration
 public class FileConfig {
@@ -30,10 +29,9 @@ public class FileConfig {
     private String regionName;
 
     /**
-     * @method      amazonS3
-     * @description Initiate bean for Amazon S3 service
+     * Initiate bean for Amazon S3 service.
      *
-     * @return      the amazon s3
+     * @return  the amazon s3
      */
     @Bean
     public AmazonS3 amazonS3() {

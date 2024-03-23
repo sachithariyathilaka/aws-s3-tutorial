@@ -6,12 +6,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @class       APIResponse
- * @description Response resource of file controller
+ * Response resource of file controller.
  *
- * @author      Sachith Ariyathilaka
- * @version     1.0.0
- * @date        2024/03/17
+ * @author  Sachith Ariyathilaka
+ * @version 1.0.0
+ * @since   2024/03/17
  */
 @AllArgsConstructor
 @NoArgsConstructor

@@ -8,35 +8,27 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @class       FileController
- * @description Controller layer of the file storage
+ * Controller layer of the file storage.
  *
- * @author      Sachith Ariyathilaka
- * @version     1.0.0
- * @date        2024/03/17
+ * @author  Sachith Ariyathilaka
+ * @version 1.0.0
+ * @since   2024/03/17
  */
 @RequestMapping("/api/file")
 @RestController
 public class FileController {
     private final FileService fileService;
 
-    /**
-     * @constructor FileController
-     * @description Argument constructor for class FileController
-     *
-     * @param       fileService the file service
-     */
     public FileController(FileService fileService) {
         this.fileService = fileService;
     }
 
     /**
-     * @method      uploadFile
-     * @description Create endpoint for upload file
+     * Create endpoint for upload file.
      *
-     * @param       multipartFile the multipart file
+     * @param   multipartFile the multipart file
      *
-     * @return      the api response
+     * @return  the api response
      */
     @PostMapping("/upload")
     public ResponseEntity<APIResponse<String>> uploadFile(@RequestParam(value = "file") MultipartFile multipartFile) {
@@ -46,12 +38,11 @@ public class FileController {
     }
 
     /**
-     * @method      downloadFile
-     * @description Create endpoint for download file
+     * Create endpoint for download file.
      *
-     * @param       fileName the file name
+     * @param   fileName the file name
      *
-     * @return      the api response
+     * @return  the api response
      */
     @GetMapping("/download/{fileName}")
     public ResponseEntity<APIResponse<byte[]>> downloadFile(@PathVariable String fileName) {
@@ -61,12 +52,11 @@ public class FileController {
     }
 
     /**
-     * @method      deleteFile
-     * @description Create endpoint for delete file
+     * Create endpoint for delete file.
      *
-     * @param       fileName the file name
+     * @param   fileName the file name
      *
-     * @return      the api response
+     * @return  the api response
      */
     @DeleteMapping("/delete/{fileName}")
     public ResponseEntity<APIResponse<String>> deleteFile(@PathVariable String fileName) {

@@ -1,4 +1,4 @@
-package com.bytegen.s3tutorial.config;
+package io.github.sachithariyathilaka.config;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;

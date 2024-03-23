@@ -12,7 +12,7 @@
 	</parent>
 
 	<!-- Core information -->
-	<groupId>com.bytegen</groupId>
+	<groupId>io.github.sachithariyathilaka</groupId>
 	<artifactId>s3-tutorial</artifactId>
 	<version>1.0.0</version>
 
@@ -20,7 +20,7 @@
 	<packaging>jar</packaging>
 
 	<!-- Project information -->
-	<name>s3-tutorial</name>
+	<name>AWS S3 Tutorial</name>
 	<description>Spring boot project for integrate AWS S3</description>
 	<url>https://github.com/sachithariyathilaka/s3-tutorial</url>
 	<inceptionYear>2024</inceptionYear>
@@ -92,7 +92,7 @@
 	<!-- Profile information -->
 	<profiles>
 		<profile>
-			<id>Tutorial</id>
+			<id>tutorial</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
@@ -155,6 +155,13 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- SCM information -->
+	<scm>
+		<url>https://github.com/sachithariyathilaka/aws-s3-tutorial</url>
+		<connection>scm:git:https://github.com/sachithariyathilaka/aws-s3-tutorial.git</connection>
+		<developerConnection>scm:git:git@github.com:sachithariyathilaka/aws-s3-tutorial.git</developerConnection>
+	</scm>
 
 	<!-- Reporting information -->
 	<reporting>

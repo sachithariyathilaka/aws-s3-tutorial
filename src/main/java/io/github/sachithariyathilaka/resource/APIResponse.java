@@ -1,4 +1,4 @@
-package com.bytegen.s3tutorial.resource;
+package io.github.sachithariyathilaka.resource;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

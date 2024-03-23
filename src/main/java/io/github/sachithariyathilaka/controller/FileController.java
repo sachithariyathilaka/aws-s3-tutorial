@@ -1,7 +1,7 @@
-package com.bytegen.s3tutorial.controller;
+package io.github.sachithariyathilaka.controller;
 
-import com.bytegen.s3tutorial.resource.APIResponse;
-import com.bytegen.s3tutorial.service.FileService;
+import io.github.sachithariyathilaka.resource.APIResponse;
+import io.github.sachithariyathilaka.service.FileService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

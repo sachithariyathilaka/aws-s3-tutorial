@@ -1,4 +1,4 @@
-package com.bytegen.s3tutorial.service;
+package io.github.sachithariyathilaka.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

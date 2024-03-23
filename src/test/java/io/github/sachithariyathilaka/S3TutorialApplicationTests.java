@@ -1,4 +1,4 @@
-package com.bytegen.s3tutorial;
+package io.github.sachithariyathilaka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

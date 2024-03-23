@@ -1,10 +1,10 @@
-package com.bytegen.s3tutorial.service.Impl;
+package io.github.sachithariyathilaka.service.Impl;
 
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.amazonaws.util.IOUtils;
-import com.bytegen.s3tutorial.service.FileService;
+import io.github.sachithariyathilaka.service.FileService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

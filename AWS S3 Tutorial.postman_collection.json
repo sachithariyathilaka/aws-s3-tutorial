@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "a058aff0-0222-4b2a-bfb0-f911c9d8f232",
+		"name": "AWS S3 Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7110933"
+	},
+	"item": [
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Sachith Ariyathilaka/Downloads/TAZ2587 U 1 E (1).pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/file/download/fileName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"file",
+						"download",
+						"fileName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/file/delete/fileName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"file",
+						"delete",
+						"fileName"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -20,18 +20,19 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/Sachith Ariyathilaka/Downloads/TAZ2587 U 1 E (1).pdf"
+									"src": "/C:/Users/Sachith Ariyathilaka/OneDrive/Pictures/Screenshots/Screenshot 2024-03-31 154716.png"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8090/api/file/upload",
+							"raw": "http://localhost:8090/s3-tutorial/api/file/upload",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8090",
 							"path": [
+								"s3-tutorial",
 								"api",
 								"file",
 								"upload"
@@ -46,17 +47,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8090/api/file/download/fileName",
+							"raw": "http://localhost:8090/s3-tutorial/api/file/download/Screenshot 2024-03-31 154716.png-1711881130567",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8090",
 							"path": [
+								"s3-tutorial",
 								"api",
 								"file",
 								"download",
-								"fileName"
+								"Screenshot 2024-03-31 154716.png-1711881130567"
 							]
 						}
 					},
@@ -68,17 +70,18 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8090/api/file/delete/fileName",
+							"raw": "http://localhost:8090/s3-tutorial/api/file/delete/Screenshot 2024-03-31 154716.png-1711881130567",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8090",
 							"path": [
+								"s3-tutorial",
 								"api",
 								"file",
 								"delete",
-								"fileName"
+								"Screenshot 2024-03-31 154716.png-1711881130567"
 							]
 						}
 					},

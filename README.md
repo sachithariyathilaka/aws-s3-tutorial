@@ -4,6 +4,7 @@ Spring boot project with integration of AWS S3.
 * ### Technologies
   * Java 17
   * Spring Boot 3.2.3
+  * Spring Boot Starter Web
   * Spring Cloud AWS Core 2.2.6.RELEASE
   * Maven
   * Lombok

@@ -20,7 +20,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/Sachith Ariyathilaka/OneDrive/Pictures/Screenshots/Screenshot 2024-03-31 154716.png"
+									"src": "/C:/Users/Sachith Ariyathilaka/Downloads/jwt-helper-high-resolution-logo.png"
 								}
 							]
 						},
@@ -47,7 +47,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8090/s3-tutorial/api/file/download/Screenshot 2024-03-31 154716.png-1711881130567",
+							"raw": "http://localhost:8090/s3-tutorial/api/file/download/jwt-helper-high-resolution-logo.png-1713084763477",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -58,7 +58,7 @@
 								"api",
 								"file",
 								"download",
-								"Screenshot 2024-03-31 154716.png-1711881130567"
+								"jwt-helper-high-resolution-logo.png-1713084763477"
 							]
 						}
 					},
@@ -70,7 +70,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8090/s3-tutorial/api/file/delete/Screenshot 2024-03-31 154716.png-1711881130567",
+							"raw": "http://localhost:8090/s3-tutorial/api/file/delete/jwt-helper-high-resolution-logo.png-1713084763477",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -81,7 +81,7 @@
 								"api",
 								"file",
 								"delete",
-								"Screenshot 2024-03-31 154716.png-1711881130567"
+								"jwt-helper-high-resolution-logo.png-1713084763477"
 							]
 						}
 					},

@@ -16,7 +16,7 @@ Spring boot project with integration of AWS S3.
 
   * Release: 1.0.0
   * Date: 2024/03/17
-  * Module: File Storage Module
+  * Module: AWS S3 Tutorial
   * Changes
       * File upload endpoint to AWS S3.
       * File download endpoint from AWS S3.

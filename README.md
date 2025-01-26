@@ -9,13 +9,13 @@ Spring boot project with integration of AWS S3.
   * Maven
   * Lombok
   
-* ### Configuration
-  * https://sachithariyathilaka.medium.com/aws-s3-spring-boot-integration-a575b76400b1
+* ### Documentation
+  * [Read on Medium](https://sachithariyathilaka.medium.com/aws-s3-spring-boot-integration-a575b76400b1)
   
 * ### Release Note
 
-  * Release: 1.0.0
-  * Date: 2024/03/17
+  * Version: 1.0.0
+  * Release Date: 2024/03/17
   * Module: AWS S3 Tutorial
   * Changes
       * File upload endpoint to AWS S3.
